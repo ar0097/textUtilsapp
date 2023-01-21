@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar li{
+  list-style: none;
+  padding: 4px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  display: inline;
+}
+.navContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.light{
+  background-color:lightgrey;
+}
+.dark{
+  background-color: gray;
+  color: black;
+}
+.calender-footer{
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.toggle{
+  display: flex;
+  padding: 10px;
+}
+.toggle span{
+  margin-right: 10px;
+  font-weight: 600;
+}
+.dark-mode-switch{
+  position: relative;
+  width: 48px;
+  height: 25px;
+  border-radius: 14px;
+  background-color: blue;
+  cursor: pointer;
+}
+.dark-mode-switch-ident{
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left .2s ease-in-out;
+}
+.dark .dark-mode-switch .dark-mode-switch-ident{
+  top: 2px;
+  left: calc(2px + 50%);
+}
+
+/* Teaxtarea */
+
+.textformContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+textarea{
+  width: 100%;
+  outline: none;
+  border: 3px solid lightgrey;
+  font-size: 17px;
+  padding: 4px 10px;
+  background-color:whitesmoke;
+}
+
+.textformButtons button{
+  cursor: pointer;
+  background-color:blue;
+  color: white;
+  padding: 4px 10px;
+  margin: 2px;
+  border: none;
+  font-size: 17px;
+}
+.textformInline{
+  width: 60%;
+}
+.preview{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.preview p{
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
